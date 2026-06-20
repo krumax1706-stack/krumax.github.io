@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พี่ปันดีชวนเรียนไทย ป.3 | สื่อการสอนภาษาไทยแสนสนุก</title>
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="สื่อการเรียนการสอนออนไลน์วิชาภาษาไทย ชั้นประถมศึกษาปีที่ 3 ครอบคลุมการเขียนคำศัพท์ การแต่งประโยค และการเขียนเรื่อง พร้อมแบบทดสอบวัดผลการเรียนรู้ตาม Bloom's Taxonomy">
+    <meta name="keywords" content="ภาษาไทย ป.3, สื่อการเรียนการสอน, การแต่งประโยค, การเขียนคำศัพท์, การเขียนเรื่อง, แบบทดสอบภาษาไทย, Bloom's Taxonomy">
+    <meta name="author" content="ทีมผู้พัฒนาสื่อการสอนภาษาไทย ป.3">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo" id="header-logo">
+                <span class="logo-icon">🐘</span>
+                <div>
+                    <h1 class="logo-text">พี่ปันดีชวนเรียนไทย <span class="logo-tag">ป.3</span></h1>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active" data-target="home-view">หน้าหลัก</a></li>
+                <li><a href="#" class="nav-link" data-target="about-view">เกี่ยวกับหลักสูตร</a></li>
+                <li>
+                    <div class="user-badge" id="header-star-badge" title="ดาวความก้าวหน้าของฉัน">
+                        <span id="header-star-count">⭐ 0 ดวง</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+
+        <!-- 1. HOME VIEW (DASHBOARD) -->
+        <section id="home-view" class="view-section active">
+            <!-- Hero banner -->
+            <div class="hero">
+                <div class="hero-content">
+                    <h2 class="hero-title">เก่งภาษาไทยไปกับ<br><span style="color: var(--secondary-color);">พี่ปันดีกันเถอะ!</span></h2>
+                    <p class="hero-subtitle">ชวนน้อง ๆ เรียนรู้หลักภาษาไทยแสนสนุก ฝึกฝนทักษะการสะกดคำ การแต่งประโยค และการเขียนเรื่อง พร้อมพิชิตดาวความดีไปด้วยกัน!</p>
+                    <button class="btn btn-primary" id="btn-hero-start" onclick="document.getElementById('card-vocab').click()">เริ่มบทเรียนแรกเลย ➔</button>
+                </div>
+                <div class="hero-mascot-container">
+                    <img src="assets/images/mascot.png" alt="พี่ปันดีช้างแสนรู้" class="hero-mascot">
+                </div>
+            </div>
+
+            <!-- Levels Section -->
+            <h2 style="font-family: var(--font-heading); margin-bottom: 1.5rem; color: var(--primary-dark);">🎯 เลือกระดับความรู้วิชาภาษาไทย</h2>
+            <div class="levels-grid">
+                
+                <!-- Level 1 Card -->
+                <div class="level-card lvl-1" id="card-vocab">
+                    <div class="level-badge-num">1</div>
+                    <div>
+                        <h3 class="level-title">✏️ ระดับ 1: การเขียนคำศัพท์</h3>
+                        <p class="level-desc">เรียนรู้มาตราตัวสะกดที่ตรงและไม่ตรงมาตรา คำควบกล้ำแท้/ไม่แท้ และอักษรนำน่ารู้ เหมาะสำหรับปูพื้นฐานการสะกดคำ</p>
+                    </div>
+                    <div class="level-progress-wrapper">
+                        <div class="level-progress-text">
+                            <span>ความคืบหน้า</span>
+                            <span id="progress-text-vocab">0/6 ข้อ</span>
+                        </div>
+                        <div class="level-progress-bar">
+                            <div class="level-progress-fill" id="progress-fill-vocab"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn-block btn-primary">เริ่มเรียนรู้ ➔</button>
+                </div>
+
+                <!-- Level 2 Card -->
+                <div class="level-card lvl-2" id="card-sentence">
+                    <div class="level-badge-num">2</div>
+                    <div>
+                        <h3 class="level-title">💬 ระดับ 2: การแต่งประโยค</h3>
+                        <p class="level-desc">เจาะลึกส่วนประกอบของประโยค (ประธานและแสดง) และเรียนรู้การแต่งประโยคเพื่อการสื่อสารชนิดต่างๆ ให้เหมาะสม</p>
+                    </div>
+                    <div class="level-progress-wrapper">
+                        <div class="level-progress-text">
+                            <span>ความคืบหน้า</span>
+                            <span id="progress-text-sentence">0/6 ข้อ</span>
+                        </div>
+                        <div class="level-progress-bar">
+                            <div class="level-progress-fill" id="progress-fill-sentence"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn-block btn-secondary">เริ่มเรียนรู้ ➔</button>
+                </div>
+
+                <!-- Level 3 Card -->
+                <div class="level-card lvl-3" id="card-story">
+                    <div class="level-badge-num">3</div>
+                    <div>
+                        <h3 class="level-title">📖 ระดับ 3: การเขียนเรื่อง</h3>
+                        <p class="level-desc">ฝึกฝนการเขียนเรื่องจากภาพและตามจินตนาการ รวมไปถึงการใช้คำเชื่อมประโยคเพื่อเชื่อมเรื่องราวให้สละสลวยน่าอ่าน</p>
+                    </div>
+                    <div class="level-progress-wrapper">
+                        <div class="level-progress-text">
+                            <span>ความคืบหน้า</span>
+                            <span id="progress-text-story">0/6 ข้อ</span>
+                        </div>
+                        <div class="level-progress-bar">
+                            <div class="level-progress-fill" id="progress-fill-story"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn-block btn-accent">เริ่มเรียนรู้ ➔</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 2. ABOUT SYLLABUS VIEW -->
+        <section id="about-view" class="view-section">
+            <div class="lesson-container">
+                <h2 style="font-family: var(--font-heading); color: var(--primary-color); margin-bottom: 1.5rem;">🏫 โครงสร้างหลักสูตรและเป้าหมายการประเมินผล</h2>
+                
+                <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--primary-dark);">การอ้างอิงหลักสูตรแกนกลาง</h3>
+                <p>เนื้อหาในเว็บไซต์นี้ได้รับการวิเคราะห์และเรียบเรียงขึ้นตามมาตรฐานการเรียนรู้และตัวชี้วัด กลุ่มสาระการเรียนรู้ภาษาไทย ชั้นประถมศึกษาปีที่ 3 โดยเฉพาะส่วนของ <strong>มาตรฐาน ท ๔.๑</strong> (หลักการใช้ภาษาไทย) และ <strong>มาตรฐาน ท ๒.๑</strong> (การเขียน) เพื่อให้นักเรียนมีพื้นฐานที่ดีในการเขียนสะกดคำ รู้จักแต่งประโยคสละสลวย และสามารถเขียนเรื่องราวน่าอ่าน</p>
+
+                <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--primary-dark);">การวัดผลตาม Bloom's Taxonomy</h3>
+                <p>แบบทดสอบในแต่ละระดับการเรียนรู้จะถูกสร้างสรรค์ขึ้นโดยมีการไล่ระดับขั้นความลึกซึ้งทางปัญญา (Cognitive Domain) ตามทฤษฎีการเรียนรู้ของบลูม (Bloom's Taxonomy) ครบทั้ง 6 ขั้น เพื่อช่วยครูและผู้ปกครองประเมินจุดแข็งและส่วนที่ควรพัฒนาของนักเรียนได้อย่างรอบด้าน:</p>
+                
+                <div class="example-box" style="margin-top: 1rem;">
+                    <ol style="margin-left: 1.5rem;">
+                        <li><strong>ความจำ (Remembering):</strong> ระบุตัวสะกด โครงสร้างไวยากรณ์ หรือคำเชื่อมเดี่ยว ๆ</li>
+                        <li><strong>ความเข้าใจ (Understanding):</strong> เติมคำความหมายถูกต้อง หรือปรับเปลี่ยนโครงสร้างประโยค</li>
+                        <li><strong>การประยุกต์ใช้ (Applying):</strong> นำเสียงอ่านมาเขียนคำสะกด หรือประกอบคำศัพท์ขึ้นใหม่</li>
+                        <li><strong>การวิเคราะห์ (Analyzing):</strong> ค้นหาข้อบกพร่อง คำเขียนสะกดผิด หรือส่วนขยายประธาน</li>
+                        <li><strong>การประเมินค่า (Evaluating):</strong> ตัดสินประโยคที่ถูกต้องตามหลักภาษา หรือประเมินสไตล์การแต่งประโยค/เรื่อง</li>
+                        <li><strong>การสร้างสรรค์ (Creating):</strong> การแต่งประโยคหรือบทสรุปเรื่องขึ้นใหม่ด้วยตนเองจากเงื่อนไขที่กำหนด</li>
+                    </ol>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button class="btn btn-primary" onclick="document.getElementById('header-logo').click()">🏠 กลับไปหน้าแดชบอร์ด</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. LESSON & PLAYGROUND VIEW -->
+        <section id="lesson-view" class="view-section">
+            <div class="lesson-container">
+                
+                <!-- Lesson Header -->
+                <div class="lesson-header">
+                    <div class="lesson-title-badge" id="lesson-title-badge">📚 ระดับที่ 1: การเขียนคำศัพท์</div>
+                </div>
+
+                <!-- Slide Tabs Navigation -->
+                <div class="tab-nav" id="lesson-tab-nav">
+                    <!-- Dynamic Buttons will be inserted here -->
+                </div>
+
+                <!-- Dynamic Slide Content Panel -->
+                <div class="lesson-content-wrapper" id="lesson-pane-content">
+                    <!-- Dynamic Slide Content Elements -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. QUIZ WRAPPER -->
+        <section id="lesson-panel" style="display: none;"></section>
+        
+        <!-- Quiz Play View -->
+        <section id="quiz-panel" class="view-section">
+            <div class="lesson-container">
+                
+                <div class="quiz-header">
+                    <h3 id="quiz-category-title" style="font-family: var(--font-heading); color: var(--primary-dark);">แบบทดสอบ</h3>
+                    <div style="display: flex; gap: 0.5rem; align-items: center;">
+                        <span class="bloom-badge" id="bloom-level-badge">ระดับ: ความจำ</span>
+                        <span class="quiz-progress-text" id="quiz-progress-text">ข้อที่ 1 จาก 6</span>
+                    </div>
+                </div>
+
+                <div class="question-box">
+                    <p class="question-text" id="quiz-question-text">ข้อคำถามจะปรากฏที่นี่...</p>
+                    <div class="options-grid" id="quiz-options-grid">
+                        <!-- Options will be generated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Mascot Speak bubble for feedback -->
+                <div class="mascot-feedback-box" id="mascot-feedback" style="display: none;">
+                    <img src="assets/images/mascot.png" alt="พี่ปันดีนำทาง" class="feedback-mascot-img">
+                    <div class="speech-bubble">
+                        <div class="explanation-title" id="feedback-title">เก่งมากครับ! 🎉</div>
+                        <p id="feedback-explanation">คำอธิบายจะถูกโหลดตรงนี้เพื่อประเมินความรู้และความเข้าใจของเด็ก ๆ</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: flex-end; margin-top: 1.5rem;">
+                    <button class="btn btn-primary" id="quiz-next-btn" style="display: none;">ข้อถัดไป ➔</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. QUIZ RESULT VIEW -->
+        <section id="quiz-result-panel" class="view-section">
+            <div class="lesson-container" style="text-align: center;">
+                <h2 style="font-family: var(--font-heading); color: var(--primary-dark); margin-bottom: 1.5rem;">📊 ผลการประเมินความเข้าใจ</h2>
+
+                <div class="results-box">
+                    <!-- Circular Score Chart -->
+                    <div class="circular-score" id="circular-score-box" style="--score-percent: 0;">
+                        <div class="circular-score-num" id="result-score-num">0/6</div>
+                        <div class="circular-score-label">คะแนนที่ได้</div>
+                    </div>
+
+                    <h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--secondary-color); margin-bottom: 0.5rem;" id="result-rating-title">พยายามอีกนิดนะคนเก่ง</h3>
+                    <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 2rem auto;" id="result-rating-desc">ทำได้ดีแล้วครับ ลองทบทวนความรู้ใหม่อีกครั้งเพื่อพิชิตคะแนนเต็มนะครับ!</p>
+
+                    <!-- Bloom's Taxonomy report card -->
+                    <div class="bloom-report">
+                        <div class="bloom-report-title">
+                            <span>📊 ผลการทดสอบจำแนกตามโครงสร้าง Bloom's Taxonomy</span>
+                        </div>
+                        <div class="bloom-grid" id="result-bloom-grid">
+                            <!-- Dynamic Row list will be rendered here -->
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                        <button class="btn btn-outline" id="quiz-back-home-btn">🏠 เมนูหลัก</button>
+                        <button class="btn btn-secondary" id="quiz-restart-btn">🔄 ทำอีกครั้ง</button>
+                        <button class="btn btn-accent" id="btn-show-cert" style="box-shadow: 0 0 15px rgba(0, 201, 167, 0.4);">🏆 ดาวน์โหลดเกียรติบัตร</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Certificate Signature Modal -->
+    <div class="modal-overlay" id="cert-modal">
+        <div class="modal-content">
+            <span class="modal-icon">📜</span>
+            <h3 class="modal-title">กรอกชื่อเพื่อพิมพ์เกียรติบัตร</h3>
+            <p class="modal-desc">กรุณาพิมพ์ชื่อของน้องคนเก่ง เพื่อให้พี่ปันดีเขียนลงบนเกียรติบัตรแห่งความสำเร็จวิชาภาษาไทย ป.3 นะครับ</p>
+            
+            <input type="text" id="student-name-input" class="story-textarea" style="height: 50px; font-size: 1.1rem; text-align: center; margin-bottom: 1.5rem;" placeholder="ตัวอย่าง: เด็กชายสัจจะ ธรรมดี" maxlength="30" autocomplete="off">
+            
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <button class="btn btn-outline" id="modal-close">ยกเลิก</button>
+                <button class="btn btn-accent" id="btn-download-cert">💾 ดาวน์โหลดรูปเกียรติบัตร</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 สื่อการสอนภาษาไทยระดับชั้นประถมศึกษาปีที่ 3. พัฒนาขึ้นด้วยความใส่ใจและอ้างอิงตาม <a href="#" data-target="about-view">Bloom's Taxonomy</a></p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--text-muted);">สามารถติดตั้งและนำไป Deploy บน GitHub Pages ได้สะดวกแบบ Static Page</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/content.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
